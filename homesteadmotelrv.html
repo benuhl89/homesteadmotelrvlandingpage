@@ -1,0 +1,406 @@
+<!doctype html>
+<html>
+<head>
+  <style>
+    :root {
+  --green-color: #3daa69;
+  --blue-color: #4c8aa2;
+  --yellow-color: #e5db80;
+}
+* {
+  /*border: 1px solid black; */
+  box-sizing: border-box;
+  
+}
+html {
+  background-color: white;
+}
+#header-img {
+  width: 180px;
+  min-width: 150px;
+  margin-left: 8px;
+}
+header {
+  width: 100%;
+  position: fixed;
+  margin-left: 0;
+  margin-top: 0;
+  top: 0;
+  left: 0;
+  height: 70px;
+  background: linear-gradient(90deg, rgba(229, 219, 128, 50%), var(--green-color));
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+}
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-right: 30px;
+}
+.nav-links li a {
+  margin: 25px;
+  text-decoration: none;
+  font-family: Gill Sans, sans-serif;
+  color: white;
+  font-weight: 100;
+  letter-spacing: 1px;
+  background-color: transparent;
+  padding: 6px;
+  border-radius: 5px 5px 5px 5px;
+}
+.nav-links li a:hover {
+  margin: 25px;
+  text-decoration: none;
+  font-family: Gill Sans, sans-serif;
+  color: var(--yellow-color);
+  font-weight: 100;
+  letter-spacing: 1px;
+  background-color: var(--blue-color);
+  padding: 6px;
+  border-radius: 5px 5px 5px 5px;
+}
+ul {
+  list-style-type: none;
+  font-size: 1.25rem
+}
+main {
+  width: 100vw;
+}
+.email-section {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 4rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  position: relative;
+  top: 120px;
+}
+h2 {
+  margin-top: 40px;
+  font-family: Rockwell, serif;
+  letter-spacing: 0.125rem;
+  text-align: center;
+  color: var(--blue-color);
+}
+#submit {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 15vw;
+  min-width: 100px;
+  border-radius: 5px;
+  background-color: var(--green-color);
+  border: 1px solid transparent;
+  color: var(--yellow-color);  
+} 
+#email {
+  margin-bottom: 10px;
+} 
+
+.border {
+  
+  background: linear-gradient(rgba(79, 79, 79, .2), rgba(79, 79, 79, .05));
+  width: 100vw;
+  height: 3vh;
+  border-radius: 5px 5px 5px 5px;
+  
+}
+.border-2 {
+  background: linear-gradient(rgba(79, 79, 79, .2), rgba(79, 79, 79, .05));
+  width: 100vw;
+  height: 3vh;
+  border-radius: 5px 5px 5px 5px;
+  margin-bottom: 40px;
+}
+.features-section {
+  margin-top: 18px;
+  margin-bottom: 25px;
+}
+.features-containers {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+h3 {
+  font-family: Rockwell, serif;
+  letter-spacing: 2px;
+  width: 50%;
+  text-align: center;
+  font-size: 2rem;
+  margin-right: 60px;
+  margin-left: 20px;
+  color: var(--blue-color);
+}
+.feature-text {
+  40vw;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: Gill Sans, sans-serif;
+}
+.about section {
+  margin-top: 5px;
+}
+iframe {
+  margin-bottom: 80px;
+}
+.pricing-section {
+  width: 90%;
+  max-width: 750px;
+  margin-top: -20px;
+  margin-left: -30px;
+}
+.pics-price {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: flex-end;
+}
+.price-pic-1, .price-pic-2, .price-pic-3 {
+	width: 210px;
+	height: 285px;
+  min-width: 105px;
+  min-height: 142.5px;
+	position: relative;
+	float: left;
+  margin: 10px;
+}
+.price-pic-1 {
+  background-image: url(https://lh3.googleusercontent.com/pw/AP1GczPQXZ3a1doYmz_vu3EgQK2VPHCcgx7hVOmnJsZbPqCdBwjaMFIWb42cTemaP6kG2pF0HKMhx4hnkAeFcgcw4T-51gUUialQqqQ4YGo9eX0oRtMqrzgaWkjYMskUFIt3wk2VsBI3nS-_jcvfD_GDpJLE=w420-h570-s-no?authuser=0);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.price-pic-2 {
+  background-image: url(https://lh3.googleusercontent.com/pw/AP1GczPGvv7nWHgg12m7Ttt1Mj09WR_CXYlKx9s3Ni4-w1F-U5t6IHc7wgE39tipcItjj6Icxlfnvew6Hm-fo6a0r89qMlWfRZJleDnHHSKQOiZBEgFwwJD_Iva0I5IDyNFtAYrU4KXGigRIttfzu8_nnLiY=w420-h570-s-no?authuser=0);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.price-pic-3 {
+  background-image: url(https://lh3.googleusercontent.com/pw/AP1GczPNQh7YZHsxtJF9O8UmAmhWzazzPrE9tfUuHzBAa9Rbl4xgjYKlGuxLVH6Cn8-HrGw2czrvVwOW-IGs12U_KzIytVbsNrbXnRdrjVZNYDPAHIBoDGRbxzCXWFz8XMeBjw1RxTt51gzAMckyZLL-I5bJ=w420-h570-s-no?authuser=0);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.price-titles {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	align-items: flex-end;
+  color: var(--blue-color);
+  font-family: Rockwell, serif;
+  font-weight: bold;
+  letter-spacing: 2.85px;
+  font-size: 1.25rem;
+  text-align: center;
+}
+.price-title-1, .price-title-2, .price-title-3 {
+	width: 100px;
+	text-align: center;
+}
+.price-text {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+  font-family: Gill Sans, sans-serif; 
+  font-style: italic;
+  font-size: 1rem;
+}
+.price-text-1, .price-text-2, .price-text-3 {
+	width: 420px;
+	text-align: center;
+}
+@media only screen and (max-width: 620px) {
+  #navbar ul {
+    height: 350px;
+  }
+
+  header {
+    background: linear-gradient(90deg, rgba(229, 219, 128, 50%), #3daa69);
+    background-color: white;
+    padding: 0;
+    width: 100%;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #features {
+    margin-left: -20px;
+  }
+  .features-containers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+}
+  h3 {
+    margin-left: 0;
+    text-align: center;
+  }
+  .feature-text {
+    margin-top: -19px;
+    text-align: justified;
+  }
+  .pricing-section {
+    width: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .price-pic-1, .price-pic-2, .price-pic-3 {
+	width: 120px;
+	height: 155px;
+	position: relative;
+	float: left;
+  margin: 10px;
+  }
+  .pics-price {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+  }
+  .price-titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 525px;
+    width: 150px;
+    align-items: flex-start;
+    color: var(--blue-color);
+    font-family: Rockwell, serif;
+    font-weight: bold;
+    letter-spacing: 2.85px;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+  .price-text {
+    width: 50px;
+    height: 525px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center
+  }
+  .price-text-1 {
+	width: 100px;
+	text-align: justified;
+  margin-top: -20px;
+  }
+  .price-text-2 {
+	width: 100px;
+	text-align: justified;
+  margin-top: 40px;
+  }
+  .price-text-3 {
+	width: 100px;
+	text-align: justified;
+  margin-top: 35px;
+  }
+}
+  </style>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <header id="header">
+    <img id="header-img" src="https://lh3.googleusercontent.com/pw/AP1GczMxFpqsZpDQJpQuSDfdKf_xwDwv2HX9ImJ0CdTu3JIJTwVDa6qfXF3in7hF9-NSUKu-Usk5xkTfeoTNgczTUXbRHfr2mK8x-9bTqUMnKPX4LvTFrIOZ5dnEYpoDO61Q3TDEA0s57wiUQvfaT1ATpBP9=w1188-h367-s-no?authuser=0">
+    <nav id="nav-bar">
+      <ul class="nav-links">
+        <li><a id="features" href="#features-section" class="nav-link">features</a></li>
+        <li><a href="#about-section" class="nav-link">about</a></li>
+        <li><a href="#pricing-section" class="nav-link">pricing</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="email-section">
+      <h2>Sign Up For Reservations</h2>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input type="email" id="email" name="email" placeholder="enter your email">
+        <aside><input type="submit" id="submit" value="Submit"></aside>
+      </form>
+    </section>
+    <div class="border" id="features-section"></div>
+    <section class="features-section">
+      <div class="features-containers">
+        <h3>Motel Rooms</h3>
+        <p class="feature-text">Single, Double, or Premium Single units offer one or two comfortable beds, full bathroom, equiped kitchenette, and a 
+personal touch that feels more like home than a chain hotel. </p>
+      </div>
+      <div class="features-containers">
+        <h3>RV Lots</h3>
+        <p class="feature-text">Designed with both short-term guests and long-term travelers in mind, 
+our 28 no size limit RV sites offer full hookups, reliable utilities, and room to relax. 
+Making your stay comfortable, no matter how long you’re with us. 
+Please contact the Homestead Motel and RV Park Staff for more information and rental availability.</p>
+      </div>
+      <div class="features-containers">
+        <h3>Drive-In Movie</h3>
+        <p class="feature-text">Currently under construction. Once completed will feature an open parking lot, a small fishing pond, and 
+a large 18ft by 12ft projection featuring popular movies for our tennants to enjoy free of charge during their stay with us.</p>
+      </div>
+    </section>
+    <div class="border-2" id="about-section"></div>
+    <section class="about-section">
+      <iframe
+            id="video"
+            height="315"
+            src="https://www.youtube.com/watch?v=g5ODmiBKI5k"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+    </section>
+    <div class="border-2" id="pricing-section"></div>
+
+    <! redo pricing section>
+
+    <section class="pricing-section" >
+      <div class="pics-price">
+		    <div class="price-pic-1"></div>
+		    <div class="price-pic-2"></div>
+		    <div class="price-pic-3"></div>
+	    </div>
+	    <div class="price-titles">
+	      <div class="price-title-1">Single Room</div>
+        <span></span>
+        <div class="price-title-2">Double Room</div>
+        <span></span>
+        <div class="price-title-3">Premium Single Room</aside></div>
+	    </div>
+	    <div class="price-text">
+	      <div class="price-text-1">$75 per Night<aside>$500 per Week</aside></div>
+		    <div class="price-text-2">$100 per Night<aside>$600 per Week</aside></div>
+		    <div class="price-text-3">$100 per Night<aside>$600 per Week</aside></div>
+	    </div>
+    </section>
+  </main>
+</body>
+</html>
